@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="msapplication-TileImage" content="./images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+    <title>Оформление заказа</title>
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/favicons/favicon-48x48.png">
+    <link rel="manifest" href="/images/favicons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="./images/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="./images/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="./images/favicons/coast-228x228.png">
+    <link rel="yandex-tableau-widget" href="./images/favicons/yandex-browser-manifest.json">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <main class="l-main">
+      <div class="breadcrumbs breadcrumbs_hidden-tablet breadcrumbs_hidden-phone">
+        <div class="breadcrumbs__l-container l-container  ">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__itm">
+              <svg class="icon icon-chevron-right breadcrumbs__icon">
+                <use xlink:href="./images/sprite.svg#chevron-right"></use>
+              </svg><a class="breadcrumbs__lnk" href="cart.html"><span class="breadcrumbs__ttl">Корзина</span></a>
+            </li>
+            <li class="breadcrumbs__itm">
+              <svg class="icon icon-chevron-right breadcrumbs__icon">
+                <use xlink:href="./images/sprite.svg#chevron-right"></use>
+              </svg><span class="breadcrumbs__ttl">Оформление заказа</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form class="s-order js-validate">
+        <div class="s-order__l-container l-container">
+          <h1 class="s-order__title s-order__title_h2">Оформление заказа</h1>
+          <div class="s-order__columns">
+            <div class="s-order__left">
+              <div class="s-order__block">
+                <div class="s-order__tabs-head">
+                  <div class="s-order__tabs-head-ttl">Покупатель</div>
+                  <div class="s-order__tabs-head-line">
+                    <div class="s-order__tabs-head-itm"><a class="s-order__tabs-head-lnk is-active" href="#tab1" data-tab>Физическое лицо</a></div>
+                    <div class="s-order__tabs-head-itm"><a class="s-order__tabs-head-lnk" href="#tab2" data-tab>Юридическое лицо</a></div>
+                  </div>
+                </div>
+                <div class="s-order__tabs">
+                  <div class="s-order__tab is-visible" id="tab1">
+                    <div class="s-order__row">
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-1">ФИО*</label>
+                          <input class="input__field" id="input-1" type="text" placeholder="Иванов Иван Иванович" required="required" pattern=".{2,}"></input>
+                          <div class="input__error">Сообщение об ошибке. Поле Имя не может быть короче 2 символов
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-2">Телефон</label>
+                          <input class="input__field" id="input-2" type="tel" placeholder="+7 ( ___ ) ___ - __ - __" required="required" pattern="\+7\s\(\s[0-9]{3}\s\)\s[0-9]{3}\s-\s[0-9]{2}\s-\s[0-9]{2}"></input>
+                          <div class="input__error">Заполните поле &quot;Телефон&quot;
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-3">E-mail</label>
+                          <input class="input__field" id="input-3" type="email" placeholder="mail@mymail.com" required="required"></input>
+                          <div class="input__error">Заполните поле Email
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="s-order__tab" id="tab2">
+                    <div class="s-order__row">
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-4">Название компании*</label>
+                          <input class="input__field" id="input-4" type="text" required="required" pattern=".{2,}"></input>
+                          <div class="input__error">Это поле обязательно для заполнения
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-5">Юридический адрес*</label>
+                          <input class="input__field" id="input-5" type="text" required="required" pattern=".{2,}"></input>
+                          <div class="input__error">Это поле обязательно для заполнения
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-6">ИНН*</label>
+                          <input class="input__field" id="input-6" type="number" required="required"></input>
+                          <div class="input__error">Это поле обязательно для заполнения
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-7">КПП*</label>
+                          <input class="input__field" id="input-7" type="number" required="required"></input>
+                          <div class="input__error">Номер должен состоять из 20 цифр
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-8">Контактное лицо*</label>
+                          <input class="input__field" id="input-8" type="text" placeholder="Иванов Иван Иванович" required="required" pattern=".{2,}"></input>
+                          <div class="input__error">Сообщение об ошибке. Поле Имя не может быть короче 2 символов
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-9">E-mail</label>
+                          <input class="input__field" id="input-9" type="email" placeholder="mail@mymail.com" required="required"></input>
+                          <div class="input__error">Заполните поле Email
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-10">Телефон</label>
+                          <input class="input__field" id="input-10" type="tel" placeholder="+7 ( ___ ) ___ - __ - __" required="required" pattern="\+7\s\(\s[0-9]{3}\s\)\s[0-9]{3}\s-\s[0-9]{2}\s-\s[0-9]{2}"></input>
+                          <div class="input__error">Заполните поле &quot;Телефон&quot;
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-order__col s-order__col_col-2">
+                        <div class="input s-order__input">
+                          <label class="input__label" for="input-11">Факс</label>
+                          <input class="input__field" id="input-11" type="text"></input>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-delivery">
+                <div class="b-delivery__ttl">Способ доставки</div>
+                <form class="b-search">
+                  <div class="b-search__field">
+                    <input class="b-search__input js-search" type="" placeholder="Поиск по каталогу" data-show-autocomplete-letter="2">
+                    <button class="b-search__field-btn" type="reset">
+                      <svg class="icon icon-search b-search__icon">
+                        <use xlink:href="./images/sprite.svg#search"></use>
+                      </svg>
+                      <svg class="icon icon-close b-search__icon">
+                        <use xlink:href="./images/sprite.svg#close"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="b-search__autocomplete">
+                    <div class="b-search__itm"><a class="b-search__lnk" href="#">
+                        <svg class="icon icon-search">
+                          <use xlink:href="./images/sprite.svg#search"></use>
+                        </svg>Боксеры мужские</a></div>
+                    <div class="b-search__itm"><a class="b-search__lnk" href="#">
+                        <svg class="icon icon-search">
+                          <use xlink:href="./images/sprite.svg#search"></use>
+                        </svg>Боксеры трусы мужские</a></div>
+                    <div class="b-search__itm"><a class="b-search__lnk" href="#">
+                        <svg class="icon icon-search">
+                          <use xlink:href="./images/sprite.svg#search"></use>
+                        </svg>Боксёрские перчатки</a></div>
+                    <div class="b-search__itm"><a class="b-search__lnk" href="#">
+                        <svg class="icon icon-search">
+                          <use xlink:href="./images/sprite.svg#search"></use>
+                        </svg>Боксёрские перчатки</a></div>
+                    <div class="b-search__itm"><a class="b-search__lnk" href="#">
+                        <svg class="icon icon-search">
+                          <use xlink:href="./images/sprite.svg#search"></use>
+                        </svg>Боксеры для мальчиков</a></div>
+                    <div class="b-search__itm"><a class="b-search__lnk" href="#">
+                        <svg class="icon icon-search">
+                          <use xlink:href="./images/sprite.svg#search"></use>
+                        </svg>Боксёрки</a></div>
+                  </div>
+                  <button class="b-search__close _hidden-desktop" type="reset">Отмена</button>
+                </form>
+              </div>
+            </div>
+            <div class="s-order__right">
+              <div class="s-order__sticky">
+                      <div class="b-total-order">
+                        <div class="b-total-order__line">
+                          <div class="b-total-order__ttl">Всего 4 товара</div>
+                          <div class="b-total-order__val">28 700₽</div>
+                        </div>
+                        <div class="b-total-order__line">
+                          <div class="b-total-order__ttl">Скидка</div>
+                          <div class="b-total-order__val b-total-order__val_danger">-16 700₽</div>
+                        </div>
+                        <div class="b-total-order__line b-total-order__line_dark">
+                          <div class="b-total-order__ttl b-total-order__ttl_h4">Итого</div>
+                          <div class="b-total-order__val b-total-order__val_h3">12 900₽</div>
+                        </div>
+                        <a class="btn b-total-order__btn btn_fluid btn_dark" href="#">Перейти к оформлению
+                        </a>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer class="s-footer"></footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

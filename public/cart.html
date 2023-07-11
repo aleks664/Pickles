@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="msapplication-TileImage" content="./images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+    <title>Корзина</title>
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/favicons/favicon-48x48.png">
+    <link rel="manifest" href="/images/favicons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="./images/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="./images/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="./images/favicons/coast-228x228.png">
+    <link rel="yandex-tableau-widget" href="./images/favicons/yandex-browser-manifest.json">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <main class="l-main">
+      <div class="back-box back-box_hidden-phone back-box_hidden-tablet">
+        <div class="back-box__l-container l-container"><a class="back-box__lnk lnk lnk_reverse" href="catalog.html">Вернуться в каталог</a></div>
+      </div>
+            <div class="s-section s-section_lg-pt-0 s-section_pt-40 s-section_pb-0">
+              <div class="l-container">
+                <div class="page-title">
+                  <div class="page-title__title">
+                    <h1 class="page-title__ttl page-title__ttl_h2">Корзина</h1>
+                    <div class="page-title__count page-title__count_h3">(4)</div>
+                  </div>
+                </div>
+                <div class="s-cart">
+                  <div class="s-cart__left">
+                    <div class="s-cart__block s-cart__block_mt-0">
+                      <div class="s-cart__settings">
+                        <button class="s-cart__remove" type="button">
+                          <svg class="icon icon-close s-cart__remove-icon">
+                            <use xlink:href="./images/sprite.svg#close"></use>
+                          </svg>Удалить выбранные
+                        </button>
+                        <div class="checkbox s-cart__checkbox-all checkbox_fw-normal">
+                          <input class="checkbox__input" id="input-1" type="checkbox"/>
+                          <label class="checkbox__label" for="input-1">
+                            <div class="checkbox__field">
+                              <svg class="icon icon-checked checkbox__icon">
+                                <use xlink:href="./images/sprite.svg#checked"></use>
+                              </svg>
+                            </div><span class="checkbox__txt">Выбрать все</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="s-cart__list">
+                        <div class="s-cart__itm">
+                            <div class="b-cart-product">
+                              <div class="b-cart-product__col-checkbox">
+                                <div class="checkbox b-cart-product__checkbox">
+                                  <input class="checkbox__input" id="input-2" type="checkbox"/>
+                                  <label class="checkbox__label" for="input-2">
+                                    <div class="checkbox__field">
+                                      <svg class="icon icon-checked checkbox__icon">
+                                        <use xlink:href="./images/sprite.svg#checked"></use>
+                                      </svg>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-pict"><a class="b-cart-product__pict" href="product-detail.html">
+                                  <picture>
+                                    <source srcset="images/s-cart/img-1.webp 1x, images/s-cart/img-1@2x.webp 2x" type="image/webp"/>
+                                    <source srcset="images/s-cart/img-1.png 1x, images/s-cart/img-1@2x.png 2x" type="image/jpeg"/><img class="b-cart-product__img" src="images/s-cart/img-1.webp" srcset="images/s-cart/img-1.png 1x, images/s-cart/img-1@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                  </picture></a>
+                              </div>
+                              <div class="b-cart-product__desc"><a class="b-cart-product__ttl b-cart-product__ttl_fw-medium" href="product-detail.html">Гибридные тренировочные спортивные перчатки без пальцев для мужчин мма смешанных единоборств</a>
+                                <div class="b-cart-product__color">Цвет: чёрный
+                                </div>
+                                <div class="b-cart-product__size">Размер: Xs
+                                </div>
+                                <div class="b-cart-product__settings">
+                                  <button class="fav b-cart-product__fav" type="button">
+                                    <svg class="icon icon-fav fav__icon">
+                                      <use xlink:href="./images/sprite.svg#fav"></use>
+                                    </svg>
+                                    <div class="fav__txt">В избранное</div>
+                                  </button>
+                                  <button class="b-cart-product__remove" type="button">
+                                    <svg class="icon icon-delete b-cart-product__remove-icon">
+                                      <use xlink:href="./images/sprite.svg#delete"></use>
+                                    </svg> 
+                                    <div class="b-cart-product__remove-txt">Удалить</div>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-counter">
+                                <div class="counter b-cart-product__counter counter_sm">
+                                  <button class="counter__btn counter__btn_plus" type="button">
+                                    <svg class="icon icon-plus">
+                                      <use xlink:href="./images/sprite.svg#plus"></use>
+                                    </svg>
+                                  </button>
+                                  <input class="counter__input" type="text" value="1" readonly="readonly"/>
+                                  <button class="counter__btn counter__btn_minus" type="button">
+                                    <svg class="icon icon-minus">
+                                      <use xlink:href="./images/sprite.svg#minus"></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-price">
+                                <div class="price b-cart-product__price">
+                                  <div class="price__now">2700₽</div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="s-cart__itm">
+                            <div class="b-cart-product">
+                              <div class="b-cart-product__col-checkbox">
+                                <div class="checkbox b-cart-product__checkbox">
+                                  <input class="checkbox__input" id="input-3" type="checkbox"/>
+                                  <label class="checkbox__label" for="input-3">
+                                    <div class="checkbox__field">
+                                      <svg class="icon icon-checked checkbox__icon">
+                                        <use xlink:href="./images/sprite.svg#checked"></use>
+                                      </svg>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-pict"><a class="b-cart-product__pict" href="product-detail.html">
+                                  <picture>
+                                    <source srcset="images/s-cart/img-2.webp 1x, images/s-cart/img-2@2x.webp 2x" type="image/webp"/>
+                                    <source srcset="images/s-cart/img-2.png 1x, images/s-cart/img-2@2x.png 2x" type="image/jpeg"/><img class="b-cart-product__img" src="images/s-cart/img-2.webp" srcset="images/s-cart/img-2.png 1x, images/s-cart/img-2@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                  </picture></a>
+                              </div>
+                              <div class="b-cart-product__desc"><a class="b-cart-product__ttl b-cart-product__ttl_fw-medium" href="product-detail.html">Гибридные тренировочные спортивные перчатки без пальцев для мужчин мма смешанных единоборств</a>
+                                <div class="b-cart-product__color">Цвет: чёрный
+                                </div>
+                                <div class="b-cart-product__size">Размер: Xs
+                                </div>
+                                <div class="b-cart-product__settings">
+                                  <button class="fav b-cart-product__fav" type="button">
+                                    <svg class="icon icon-fav fav__icon">
+                                      <use xlink:href="./images/sprite.svg#fav"></use>
+                                    </svg>
+                                    <div class="fav__txt">В избранное</div>
+                                  </button>
+                                  <button class="b-cart-product__remove" type="button">
+                                    <svg class="icon icon-delete b-cart-product__remove-icon">
+                                      <use xlink:href="./images/sprite.svg#delete"></use>
+                                    </svg> 
+                                    <div class="b-cart-product__remove-txt">Удалить</div>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-counter">
+                                <div class="counter b-cart-product__counter counter_sm">
+                                  <button class="counter__btn counter__btn_plus" type="button">
+                                    <svg class="icon icon-plus">
+                                      <use xlink:href="./images/sprite.svg#plus"></use>
+                                    </svg>
+                                  </button>
+                                  <input class="counter__input" type="text" value="1" readonly="readonly"/>
+                                  <button class="counter__btn counter__btn_minus" type="button">
+                                    <svg class="icon icon-minus">
+                                      <use xlink:href="./images/sprite.svg#minus"></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-price">
+                                <div class="price price_has-old b-cart-product__price">
+                                  <div class="price__now">1500₽</div>
+                                  <div class="price__old">1500₽</div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="s-cart__itm">
+                            <div class="b-cart-product">
+                              <div class="b-cart-product__col-checkbox">
+                                <div class="checkbox b-cart-product__checkbox">
+                                  <input class="checkbox__input" id="input-4" type="checkbox"/>
+                                  <label class="checkbox__label" for="input-4">
+                                    <div class="checkbox__field">
+                                      <svg class="icon icon-checked checkbox__icon">
+                                        <use xlink:href="./images/sprite.svg#checked"></use>
+                                      </svg>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-pict"><a class="b-cart-product__pict" href="product-detail.html">
+                                  <picture>
+                                    <source srcset="images/s-cart/img-3.webp 1x, images/s-cart/img-3@2x.webp 2x" type="image/webp"/>
+                                    <source srcset="images/s-cart/img-3.png 1x, images/s-cart/img-3@2x.png 2x" type="image/jpeg"/><img class="b-cart-product__img" src="images/s-cart/img-3.webp" srcset="images/s-cart/img-3.png 1x, images/s-cart/img-3@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                  </picture></a>
+                              </div>
+                              <div class="b-cart-product__desc"><a class="b-cart-product__ttl b-cart-product__ttl_fw-medium" href="product-detail.html">Гибридные тренировочные спортивные перчатки без пальцев для мужчин мма смешанных единоборств</a>
+                                <div class="b-cart-product__color">Цвет: чёрный
+                                </div>
+                                <div class="b-cart-product__size">Размер: Xs
+                                </div>
+                                <div class="b-cart-product__settings">
+                                  <button class="fav is-active b-cart-product__fav" type="button">
+                                    <svg class="icon icon-fav fav__icon">
+                                      <use xlink:href="./images/sprite.svg#fav"></use>
+                                    </svg>
+                                    <div class="fav__txt">В избранном</div>
+                                  </button>
+                                  <button class="b-cart-product__remove" type="button">
+                                    <svg class="icon icon-delete b-cart-product__remove-icon">
+                                      <use xlink:href="./images/sprite.svg#delete"></use>
+                                    </svg> 
+                                    <div class="b-cart-product__remove-txt">Удалить</div>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-counter">
+                                <div class="counter b-cart-product__counter counter_sm">
+                                  <button class="counter__btn counter__btn_plus" type="button">
+                                    <svg class="icon icon-plus">
+                                      <use xlink:href="./images/sprite.svg#plus"></use>
+                                    </svg>
+                                  </button>
+                                  <input class="counter__input" type="text" value="1" readonly="readonly"/>
+                                  <button class="counter__btn counter__btn_minus" type="button">
+                                    <svg class="icon icon-minus">
+                                      <use xlink:href="./images/sprite.svg#minus"></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-price">
+                                <div class="price price_has-old b-cart-product__price">
+                                  <div class="price__now">1500₽</div>
+                                  <div class="price__old">1500₽</div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="s-cart__itm">
+                            <div class="b-cart-product">
+                              <div class="b-cart-product__col-checkbox">
+                                <div class="checkbox b-cart-product__checkbox">
+                                  <input class="checkbox__input" id="input-5" type="checkbox"/>
+                                  <label class="checkbox__label" for="input-5">
+                                    <div class="checkbox__field">
+                                      <svg class="icon icon-checked checkbox__icon">
+                                        <use xlink:href="./images/sprite.svg#checked"></use>
+                                      </svg>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-pict"><a class="b-cart-product__pict" href="product-detail.html">
+                                  <picture>
+                                    <source srcset="images/s-cart/img-4.webp 1x, images/s-cart/img-4@2x.webp 2x" type="image/webp"/>
+                                    <source srcset="images/s-cart/img-4.png 1x, images/s-cart/img-4@2x.png 2x" type="image/jpeg"/><img class="b-cart-product__img" src="images/s-cart/img-4.webp" srcset="images/s-cart/img-4.png 1x, images/s-cart/img-4@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                  </picture></a>
+                              </div>
+                              <div class="b-cart-product__desc"><a class="b-cart-product__ttl b-cart-product__ttl_fw-medium" href="product-detail.html">Гибридные тренировочные спортивные перчатки без пальцев для мужчин мма смешанных единоборств</a>
+                                <div class="b-cart-product__color">Цвет: чёрный
+                                </div>
+                                <div class="b-cart-product__size">Размер: Xs
+                                </div>
+                                <div class="b-cart-product__settings">
+                                  <button class="fav b-cart-product__fav" type="button">
+                                    <svg class="icon icon-fav fav__icon">
+                                      <use xlink:href="./images/sprite.svg#fav"></use>
+                                    </svg>
+                                    <div class="fav__txt">В избранное</div>
+                                  </button>
+                                  <button class="b-cart-product__remove" type="button">
+                                    <svg class="icon icon-delete b-cart-product__remove-icon">
+                                      <use xlink:href="./images/sprite.svg#delete"></use>
+                                    </svg> 
+                                    <div class="b-cart-product__remove-txt">Удалить</div>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-counter">
+                                <div class="counter b-cart-product__counter counter_sm">
+                                  <button class="counter__btn counter__btn_plus" type="button">
+                                    <svg class="icon icon-plus">
+                                      <use xlink:href="./images/sprite.svg#plus"></use>
+                                    </svg>
+                                  </button>
+                                  <input class="counter__input" type="text" value="1" readonly="readonly"/>
+                                  <button class="counter__btn counter__btn_minus" type="button">
+                                    <svg class="icon icon-minus">
+                                      <use xlink:href="./images/sprite.svg#minus"></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-price">
+                                <div class="price price_has-old b-cart-product__price">
+                                  <div class="price__now">1500₽</div>
+                                  <div class="price__old">1500₽</div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-cart__block">
+                      <div class="s-cart__settings"><span class="s-cart__settings-ttl">Недоступны для заказа</span>
+                        <button class="s-cart__remove" type="button" disabled>
+                          <svg class="icon icon-close s-cart__remove-icon">
+                            <use xlink:href="./images/sprite.svg#close"></use>
+                          </svg>Удалить выбранные
+                        </button>
+                      </div>
+                      <div class="s-cart__list">
+                        <div class="s-cart__itm">
+                            <div class="b-cart-product">
+                              <div class="b-cart-product__col-checkbox">
+                                <div class="checkbox b-cart-product__checkbox">
+                                  <input class="checkbox__input" id="input-6" type="checkbox"/>
+                                  <label class="checkbox__label" for="input-6">
+                                    <div class="checkbox__field">
+                                      <svg class="icon icon-checked checkbox__icon">
+                                        <use xlink:href="./images/sprite.svg#checked"></use>
+                                      </svg>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-pict"><a class="b-cart-product__pict" href="product-detail.html">
+                                  <picture>
+                                    <source srcset="images/s-cart/img-1.webp 1x, images/s-cart/img-1@2x.webp 2x" type="image/webp"/>
+                                    <source srcset="images/s-cart/img-1.png 1x, images/s-cart/img-1@2x.png 2x" type="image/jpeg"/><img class="b-cart-product__img" src="images/s-cart/img-1.webp" srcset="images/s-cart/img-1.png 1x, images/s-cart/img-1@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                  </picture></a>
+                              </div>
+                              <div class="b-cart-product__desc"><a class="b-cart-product__ttl b-cart-product__ttl_fw-medium" href="product-detail.html">Гибридные тренировочные спортивные перчатки без пальцев для мужчин мма смешанных единоборств</a>
+                                <div class="b-cart-product__color">Цвет: чёрный
+                                </div>
+                                <div class="b-cart-product__size">Размер: Xs
+                                </div>
+                                <div class="b-cart-product__settings">
+                                  <button class="fav b-cart-product__fav" type="button">
+                                    <svg class="icon icon-fav fav__icon">
+                                      <use xlink:href="./images/sprite.svg#fav"></use>
+                                    </svg>
+                                    <div class="fav__txt">В избранное</div>
+                                  </button>
+                                  <button class="b-cart-product__remove" type="button">
+                                    <svg class="icon icon-delete b-cart-product__remove-icon">
+                                      <use xlink:href="./images/sprite.svg#delete"></use>
+                                    </svg> 
+                                    <div class="b-cart-product__remove-txt">Удалить</div>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-price b-cart-product__col-price_not-counter">
+                                <div class="price b-cart-product__price">
+                                  <div class="price__now">Расскупили</div>
+                                </div>
+                                <a class="btn b-cart-product__btn btn_dark btn_fluid" href="#">Узнать о поступлении
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="s-cart__itm">
+                            <div class="b-cart-product">
+                              <div class="b-cart-product__col-checkbox">
+                                <div class="checkbox b-cart-product__checkbox">
+                                  <input class="checkbox__input" id="input-7" type="checkbox"/>
+                                  <label class="checkbox__label" for="input-7">
+                                    <div class="checkbox__field">
+                                      <svg class="icon icon-checked checkbox__icon">
+                                        <use xlink:href="./images/sprite.svg#checked"></use>
+                                      </svg>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-pict"><a class="b-cart-product__pict" href="product-detail.html">
+                                  <picture>
+                                    <source srcset="images/s-cart/img-2.webp 1x, images/s-cart/img-2@2x.webp 2x" type="image/webp"/>
+                                    <source srcset="images/s-cart/img-2.png 1x, images/s-cart/img-2@2x.png 2x" type="image/jpeg"/><img class="b-cart-product__img" src="images/s-cart/img-2.webp" srcset="images/s-cart/img-2.png 1x, images/s-cart/img-2@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                  </picture></a>
+                              </div>
+                              <div class="b-cart-product__desc"><a class="b-cart-product__ttl b-cart-product__ttl_fw-medium" href="product-detail.html">Гибридные тренировочные спортивные перчатки без пальцев для мужчин мма смешанных единоборств</a>
+                                <div class="b-cart-product__color">Цвет: чёрный
+                                </div>
+                                <div class="b-cart-product__size">Размер: Xs
+                                </div>
+                                <div class="b-cart-product__settings">
+                                  <button class="fav b-cart-product__fav" type="button">
+                                    <svg class="icon icon-fav fav__icon">
+                                      <use xlink:href="./images/sprite.svg#fav"></use>
+                                    </svg>
+                                    <div class="fav__txt">В избранное</div>
+                                  </button>
+                                  <button class="b-cart-product__remove" type="button">
+                                    <svg class="icon icon-delete b-cart-product__remove-icon">
+                                      <use xlink:href="./images/sprite.svg#delete"></use>
+                                    </svg> 
+                                    <div class="b-cart-product__remove-txt">Удалить</div>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="b-cart-product__col-price b-cart-product__col-price_not-counter">
+                                <div class="price b-cart-product__price">
+                                  <div class="price__now">Расскупили</div>
+                                </div>
+                                <a class="btn b-cart-product__btn btn_dark btn_fluid" href="#">Узнать о поступлении
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="s-cart__right">
+                    <div class="s-cart__sticky">
+                        <div class="b-total-order">
+                          <div class="b-total-order__line">
+                            <div class="b-total-order__ttl">Всего 4 товара</div>
+                            <div class="b-total-order__val">28 700₽</div>
+                          </div>
+                          <div class="b-total-order__line">
+                            <div class="b-total-order__ttl">Скидка</div>
+                            <div class="b-total-order__val b-total-order__val_danger">-16 700₽</div>
+                          </div>
+                          <div class="b-total-order__line b-total-order__line_dark">
+                            <div class="b-total-order__ttl b-total-order__ttl_h4">Итого</div>
+                            <div class="b-total-order__val b-total-order__val_h3">12 900₽</div>
+                          </div>
+                          <a class="btn b-total-order__btn btn_fluid btn_dark" href="#">Перейти к оформлению
+                          </a>
+                        </div><br>
+                        <div class="b-total-order">
+                          <a class="btn b-total-order__btn btn_fluid btn_dark" href="#" disabled="disabled">Перейти к оформлению
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-section">
+              <div class="s-section__l-container l-container  ">
+                <h2 class="s-section__title">Вам так же может понравиться</h2>
+              </div>
+              <div class="l-container">
+                      <div class="b-product-carousel" data-loop="false" data-per-mobile-small="1.7" data-per-mobile="2.2" data-per-tablet="3.2" data-per-desktop="3.2" data-per-desktop-lg="5">
+                        <div class="b-product-carousel__l-container l-container">
+                          <div class="b-product-carousel__carousel">
+                            <div class="b-product-carousel__swiper swiper">
+                              <div class="b-product-carousel__swiper-wrapper swiper-wrapper">
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav is-active b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_hit b-card-product__label b-card-product__label_fs-xs">ХИТ</span><span class="b-card-product__label_new b-card-product__label b-card-product__label_fs-xs">НОВИНКА</span><span class="b-card-product__label_sale b-card-product__label b-card-product__label_fs-xs">SALE</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-1">
+                                              <source srcset="images/b-card-product/img-1.webp 1x, images/b-card-product/img-1@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-1.png 1x, images/b-card-product/img-1@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-1.webp" srcset="images/b-card-product/img-1.png 1x, images/b-card-product/img-1@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-1" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price price_has-old b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                            <div class="price__old">1 500₽</div>
+                                            <div class="price__sale">-15%</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav is-active b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_hit b-card-product__label b-card-product__label_fs-xs">ХИТ</span><span class="b-card-product__label_new b-card-product__label b-card-product__label_fs-xs">НОВИНКА</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-2">
+                                              <source srcset="images/b-card-product/img-3.webp 1x, images/b-card-product/img-3@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-3.png 1x, images/b-card-product/img-3@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-3.webp" srcset="images/b-card-product/img-3.png 1x, images/b-card-product/img-3@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-2" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price price_has-old b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                            <div class="price__old">1 500₽</div>
+                                            <div class="price__sale">-15%</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_hit b-card-product__label b-card-product__label_fs-xs">ХИТ</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-3">
+                                              <source srcset="images/b-card-product/img-4.webp 1x, images/b-card-product/img-4@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-4.png 1x, images/b-card-product/img-4@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-4.webp" srcset="images/b-card-product/img-4.png 1x, images/b-card-product/img-4@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-3" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские красные Pantera Energy</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_stock b-card-product__label b-card-product__label_fs-xs">Нет в наличии</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-4">
+                                              <source srcset="images/b-card-product/img-5.webp 1x, images/b-card-product/img-5@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-5.png 1x, images/b-card-product/img-5@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-5.webp" srcset="images/b-card-product/img-5.png 1x, images/b-card-product/img-5@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-4" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price price_has-old b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                            <div class="price__old">1 500₽</div>
+                                            <div class="price__sale">-15%</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские красные Pantera Energy</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav is-active b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_hit b-card-product__label b-card-product__label_fs-xs">ХИТ</span><span class="b-card-product__label_new b-card-product__label b-card-product__label_fs-xs">НОВИНКА</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-5">
+                                              <source srcset="images/b-card-product/img-1.webp 1x, images/b-card-product/img-1@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-1.png 1x, images/b-card-product/img-1@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-1.webp" srcset="images/b-card-product/img-1.png 1x, images/b-card-product/img-1@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-5" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price price_has-old b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                            <div class="price__old">1 500₽</div>
+                                            <div class="price__sale">-15%</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav is-active b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_hit b-card-product__label b-card-product__label_fs-xs">ХИТ</span><span class="b-card-product__label_new b-card-product__label b-card-product__label_fs-xs">НОВИНКА</span><span class="b-card-product__label_sale b-card-product__label b-card-product__label_fs-xs">SALE</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-6">
+                                              <source srcset="images/b-card-product/img-1.webp 1x, images/b-card-product/img-1@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-1.png 1x, images/b-card-product/img-1@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-1.webp" srcset="images/b-card-product/img-1.png 1x, images/b-card-product/img-1@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-6" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price price_has-old b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                            <div class="price__old">1 500₽</div>
+                                            <div class="price__sale">-15%</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav is-active b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_hit b-card-product__label b-card-product__label_fs-xs">ХИТ</span><span class="b-card-product__label_new b-card-product__label b-card-product__label_fs-xs">НОВИНКА</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-7">
+                                              <source srcset="images/b-card-product/img-3.webp 1x, images/b-card-product/img-3@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-3.png 1x, images/b-card-product/img-3@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-3.webp" srcset="images/b-card-product/img-3.png 1x, images/b-card-product/img-3@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-7" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price price_has-old b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                            <div class="price__old">1 500₽</div>
+                                            <div class="price__sale">-15%</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_hit b-card-product__label b-card-product__label_fs-xs">ХИТ</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-8">
+                                              <source srcset="images/b-card-product/img-4.webp 1x, images/b-card-product/img-4@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-4.png 1x, images/b-card-product/img-4@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-4.webp" srcset="images/b-card-product/img-4.png 1x, images/b-card-product/img-4@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-8" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские красные Pantera Energy</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_stock b-card-product__label b-card-product__label_fs-xs">Нет в наличии</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-9">
+                                              <source srcset="images/b-card-product/img-5.webp 1x, images/b-card-product/img-5@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-5.png 1x, images/b-card-product/img-5@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-5.webp" srcset="images/b-card-product/img-5.png 1x, images/b-card-product/img-5@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-9" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price price_has-old b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                            <div class="price__old">1 500₽</div>
+                                            <div class="price__sale">-15%</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские красные Pantera Energy</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                                <div class="b-product-carousel__swiper-slide swiper-slide">
+                                        <div class="b-card-product b-card-product_phone-small">
+                                          <div class="b-card-product__pict">
+                                            <button class="fav is-active b-card-product__fav" type="button">
+                                              <svg class="icon icon-fav fav__icon">
+                                                <use xlink:href="./images/sprite.svg#fav"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="b-card-product__labels"><span class="b-card-product__label_hit b-card-product__label b-card-product__label_fs-xs">ХИТ</span><span class="b-card-product__label_new b-card-product__label b-card-product__label_fs-xs">НОВИНКА</span>
+                                            </div>
+                                            <picture class="b-card-product__img is-visible" id="card-img-10">
+                                              <source srcset="images/b-card-product/img-1.webp 1x, images/b-card-product/img-1@2x.webp 2x" type="image/webp"/>
+                                              <source srcset="images/b-card-product/img-1.png 1x, images/b-card-product/img-1@2x.png 2x" type="image/jpeg"/><img src="images/b-card-product/img-1.webp" srcset="images/b-card-product/img-1.png 1x, images/b-card-product/img-1@2x.png 2x" alt="Название картинки" loading="lazy"/>
+                                            </picture>
+                                            <button class="btn b-card-product__btn-prev btn_fluid btn_light b-card-product__btn-prev_hidden-phone b-card-product__btn-prev_hidden-tablet" type="button" data-fancybox="fancybox-10" data-src="#quick-view">Быстрый просмотр
+                                            </button>
+                                          </div>
+                                          <div class="price price_has-old b-card-product__price">
+                                            <div class="price__now">1 500₽</div>
+                                            <div class="price__old">1 500₽</div>
+                                            <div class="price__sale">-15%</div>
+                                          </div>
+                                          <div class="b-card-product__title">Ботинки боксёрские</div><a class="b-card-product__lnk-abs" href="product-detail.html"></a>
+                                        </div>
+                                </div>
+                              </div>
+                              <div class="b-product-carousel__swiper-pagination swiper-pagination"></div>
+                            </div>
+                            <div class="b-product-carousel__swiper-button-prev swiper-button-prev">
+                              <svg class="icon icon-arrow-circle-left">
+                                <use xlink:href="./images/sprite.svg#arrow-circle-left"></use>
+                              </svg>
+                            </div>
+                            <div class="b-product-carousel__swiper-button-next swiper-button-next">
+                              <svg class="icon icon-arrow-circle-right">
+                                <use xlink:href="./images/sprite.svg#arrow-circle-right"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+    </main>
+    <footer class="s-footer"></footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
