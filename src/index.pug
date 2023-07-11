@@ -1,0 +1,119 @@
+extends base/pug/base
+append variables
+	- var title = 'Соленья'
+	- var pageClass = ''
+	- var pageUrl = '/'
+block content
+	.section
+		+picture({
+			img: 'images/main.png',
+			class: 'bg',
+			alt: 'В составе только натуральные ингредиенты'
+		})
+		.desc
+			.container
+				h1.title-h1  В составе только натуральные ингредиенты
+	.section
+		+picture({
+			img: 'images/bg-2.png',
+			class: 'bg',
+			alt: 'Вкус и польза свежих овощей!'
+		})
+		.desc
+			.container
+				.title-h1  Вкус и польза свежих овощей!
+	.section
+		+picture({
+			img: 'images/bg-3.png',
+			class: 'bg bg-m-auto'
+		})
+
+	.section
+		+picture({
+			img: 'images/bg-4.png',
+			class: 'bg',
+			alt: 'Приготовлено из тщательно отобранного сырья'
+		})
+		.desc
+			.container
+				.title-h1  Приготовлено из тщательно отобранного сырья
+	.catalog#catalog
+		.container
+			.title-h2  Консервы
+			-
+				var products =	[
+					{
+						img: 'images/prod-1.png',
+						ttl: 'Горошек зелёный',
+						val: '310 г'
+					},
+					{
+						img: 'images/prod-2.png',
+						ttl: 'Икра из кабачков',
+						val: '315 г'
+					},
+					{
+						img: 'images/prod-3.png',
+						ttl: 'Кукуруза сахарная',
+						val: '310 г'
+					},
+					{
+						img: 'images/prod-4.png',
+						ttl: 'Фасоль белая',
+						val: '310 г'
+					},
+					{
+						img: 'images/prod-5.png',
+						ttl: 'Фасоль красная',
+						val: '310 г'
+					}
+				]
+				var products2 = [
+					{
+						img: 'images/prod-6.png',
+						ttl: 'Икра овощная',
+						val: '680 г'
+					},
+					{
+						img: 'images/prod-7.png',
+						ttl: 'Лечо по-болгарски',
+						val: '680 г'
+					},
+					{
+						img: 'images/prod-8.png',
+						ttl: 'Икра из кабачков',
+						val: '680 г'
+					},
+					{
+						img: 'images/prod-9.png',
+						ttl: 'Овощное ассорти',
+						val: '680 г'
+					},
+					{
+						img: 'images/prod-10.png',
+						ttl: 'Огурцы маринованные',
+						val: '680 г'
+					},
+					{
+						img: 'images/prod-11.png',
+						ttl: 'Томаты в томатном соусе',
+						val: '680 г'
+					}
+				]
+			mixin list(data)
+				.list&attributes(attributes)
+					each product in data
+						.itm
+							.card
+								+picture({
+									media: false,
+									img: product.img,
+									alt: product.ttl
+								})
+								.desc
+									.ttl=product.ttl
+									.val=product.val
+			+list(products)
+
+			.title-h2  Овощные закатки
+			+list(products2).mb-0

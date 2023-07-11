@@ -1,0 +1,166 @@
+html {
+	font-size:62.5%;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow-y: scroll;
+	line-height: 1.3;
+	font-family: $font-family-base;
+	color: #000;
+	font-size: 14px;
+	@include media-breakpoint-up(md) {
+		font-size: 16px;
+	}
+}
+* {
+	box-sizing: border-box;
+}
+
+.l-main {
+	flex: 1 0 auto;
+}
+.container {
+	width: 100%;
+	max-width: 1110px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+}
+.icon {
+	&.icon-angle-down {
+		stroke-width: 1;
+		stroke: currentColor;
+		fill: none;
+	}
+}
+.section {
+	overflow: hidden;
+	position: relative;
+	color: #FFF;
+	text-align: center;
+	.bg {
+		display: block;
+		width: 100%;
+		@include media-breakpoint-down(sm) {
+			height: 488px;
+			object-fit: cover;
+			&.bg-m-auto {
+				height: auto;
+			}
+		}
+	}
+	.desc {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 15px;
+		@include media-breakpoint-up(md) {
+			bottom: 25px;
+		}
+		@include media-breakpoint-up(xl) {
+			bottom: 53px;
+		}
+	}
+}
+.title-h1 {
+	text-align: center;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 900;
+	margin: 0;
+	@include media-breakpoint-up(md) {
+	    font-size: 35px;
+	}
+	@include media-breakpoint-up(lg) {
+		font-size: 46px;
+
+	}
+	@include media-breakpoint-up(xl) {
+		font-size: 64px;
+	}
+}
+.catalog {
+	background: #F3F3F3;
+	padding: 40px 0 100px;
+	@include media-breakpoint-up(md) {
+		padding: 56px 0 132px;
+	}
+	.list {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin: 0 -5px 40px;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 72px;
+		}
+		@include media-breakpoint-up(xl) {
+			margin: 0 -22.5px;
+		}
+		&.mb-0 {
+			margin-bottom: 0;
+		}
+	}
+	.itm {
+		padding: 10px 5px 0;
+		flex: 0 0 percentage(1/2);
+		max-width: percentage(1/2);;
+		@include media-breakpoint-up(md) {
+			flex: 0 0 percentage(1/3);
+			max-width: percentage(1/3);;
+		}
+		@include media-breakpoint-up(xl) {
+			padding: 20px 22.5px;
+		}
+
+	}
+	.card {
+		position: relative;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 300;
+		@include media-breakpoint-up(md) {
+			font-size: 24px;
+		}
+		img {
+			width: 100%;
+			display: block;
+		}
+		.desc {
+			margin-top: -39px;
+			width: 100%;
+			@include media-breakpoint-up(md) {
+				margin-top: -60px;
+			}
+		}
+		.val {
+			font-size: 14px;
+			font-family: $font-family-secondary;
+			@include media-breakpoint-up(md) {
+				font-size: 19px;
+			}
+		}
+	}
+
+
+
+}
+.title-h2  {
+	color: #6C3;
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 10px;
+	text-align: center;
+	@include media-breakpoint-up(md) {
+		font-size: 40px;
+		margin-bottom: 36px;
+	}
+}
+.popup {
+	display: none;
+	width: 1080px;
+}
+html.with-fancybox body  {
+	margin-right: var(--fancybox-scrollbar-compensate, 0)!important;
+}
