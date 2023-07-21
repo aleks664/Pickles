@@ -1730,6 +1730,56 @@ body {
 html.with-fancybox body {
   margin-right: var(--fancybox-scrollbar-compensate, 0) !important; }
 
+.section-parallax {
+  position: relative; }
+  .section-parallax .parallax {
+    position: absolute; }
+    .section-parallax .parallax.parallax-1 {
+      width: 4.27083%;
+      height: 6.88114%;
+      top: 62.91332%;
+      left: 68.38542%; }
+    .section-parallax .parallax.parallax-2 {
+      width: 1.97917%;
+      height: 2.77033%;
+      top: 6.16622%;
+      left: 71.71875%; }
+    .section-parallax .parallax.parallax-3 {
+      width: 1.92708%;
+      height: 3.30652%;
+      top: 24.48615%;
+      left: 15.72917%; }
+    .section-parallax .parallax.parallax-4 {
+      width: 10.20833%;
+      height: 13.31546%;
+      top: 33.95889%;
+      left: 20.3125%; }
+    .section-parallax .parallax.parallax-5 {
+      width: 8.85417%;
+      height: 15.63896%;
+      top: 18.31993%;
+      left: 79.63542%; }
+    .section-parallax .parallax.parallax-6 {
+      width: 14.79167%;
+      height: 27.70331%;
+      top: 25.55853%;
+      left: 61.30208%; }
+    .section-parallax .parallax.parallax-7 {
+      width: 17.13542%;
+      height: 29.13315%;
+      top: 30.29491%;
+      left: 32.70833%; }
+    .section-parallax .parallax.parallax-8 {
+      width: 14.27083%;
+      height: 25.916%;
+      top: 21.00089%;
+      left: 38.38542%; }
+    .section-parallax .parallax.parallax-9 {
+      width: 21.51042%;
+      height: 34.49508%;
+      top: 16.71135%;
+      left: 1.5625%; }
+
 /**
  * Components
  */
@@ -1740,6 +1790,38 @@ html.with-fancybox body {
   left: 0;
   width: 100%;
   z-index: 100; }
+  .s-header.is-fixed {
+    position: fixed;
+    animation-fill-mode: both;
+    animation-duration: 0.3s;
+    animation-name: fadeInDown;
+    background-color: #FFF; }
+    .s-header.is-fixed .inner {
+      padding: 0.5rem 0; }
+      @media (min-width: 768px) {
+        .s-header.is-fixed .inner {
+          padding: 1rem 0; } }
+    .s-header.is-fixed .logo {
+      width: 5rem;
+      height: 5rem;
+      margin: 0 0.5rem; }
+      @media (min-width: 576px) {
+        .s-header.is-fixed .logo {
+          width: 6rem;
+          margin: 0 1rem; } }
+      @media (min-width: 768px) {
+        .s-header.is-fixed .logo {
+          width: 10rem;
+          height: 10rem;
+          margin: 0 1.5rem; } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
   .s-header .inner {
     width: 100%;
     padding: 0.5rem 0; }

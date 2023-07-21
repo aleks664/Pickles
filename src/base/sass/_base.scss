@@ -164,3 +164,64 @@ body {
 html.with-fancybox body  {
 	margin-right: var(--fancybox-scrollbar-compensate, 0)!important;
 }
+.section-parallax {
+	position: relative;
+	.parallax {
+		position: absolute;
+		&.parallax-1 {
+			width: percentage(82/1920);
+			height: percentage(77/1119);
+			top: percentage(704/1119);
+			left: percentage(1313/1920);
+		}
+		&.parallax-2 {
+			width: percentage(38/1920);
+			height: percentage(31/1119);
+			top: percentage(69/1119);
+			left: percentage(1377/1920);
+		}
+		&.parallax-3 {
+			width: percentage(37/1920);
+			height: percentage(37/1119);
+			top: percentage(274/1119);
+			left: percentage(302/1920);
+		}
+		&.parallax-4 {
+			width: percentage(196/1920);
+			height: percentage(149/1119);
+			top: percentage(380/1119);
+			left: percentage(390/1920);
+		}
+		&.parallax-5 {
+			width: percentage(170/1920);
+			height: percentage(175/1119);
+			top: percentage(205/1119);
+			left: percentage(1529/1920);
+		}
+		&.parallax-6 {
+			width: percentage(284/1920);
+			height: percentage(310/1119);
+			top: percentage(286/1119);
+			left: percentage(1177/1920);
+		}
+		&.parallax-7 {
+			width: percentage(329/1920);
+			height: percentage(326/1119);
+			top: percentage(339/1119);
+			left: percentage(628/1920);
+		}
+		&.parallax-8 {
+			width: percentage(274/1920);
+			height: percentage(290/1119);
+			top: percentage(235/1119);
+			left: percentage(737/1920);
+		}
+
+		&.parallax-9 {
+			width: percentage(413/1920);
+			height: percentage(386/1119);
+			top: percentage(187/1119);
+			left: percentage(30/1920);
+		}
+	}
+}

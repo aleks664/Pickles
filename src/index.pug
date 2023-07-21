@@ -28,12 +28,19 @@ block content
 			class: 'bg bg-m-auto'
 		})
 
-	.section
-		+picture({
-			img: 'images/bg-4.png',
-			class: 'bg',
-			alt: 'Приготовлено из тщательно отобранного сырья'
-		})
+	.section.section-parallax
+		img(src="images/bg-4.png" loading="lazy" class="bg")
+		img(src="images/p-9.png" loading="lazy" class="parallax parallax-9" data-speed="4").left
+		img(src="images/p-1.png" loading="lazy" class="parallax parallax-1" data-speed="3").bottom
+		img(src="images/p-2.png" loading="lazy" class="parallax parallax-2" data-speed="3").right.top
+		img(src="images/p-3.png" loading="lazy" class="parallax parallax-3" data-speed="5").left.top
+		img(src="images/p-4.png" loading="lazy" class="parallax parallax-4" data-speed="3").left.top
+		img(src="images/p-5.png" loading="lazy" class="parallax parallax-5" data-speed="1").top.right
+		img(src="images/p-6.png" loading="lazy" class="parallax parallax-6" data-speed="5").bottom.right
+		img(src="images/p-7.png" loading="lazy" class="parallax parallax-7" data-speed="4").left.bottom
+		img(src="images/p-8.png" loading="lazy" class="parallax parallax-8" data-speed="10").right
+
+
 		.desc
 			.container
 				.title-h1  Приготовлено из тщательно отобранного сырья

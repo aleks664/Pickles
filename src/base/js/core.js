@@ -106,3 +106,34 @@ anchors.forEach($button => {
 	})
 })
 Fancybox.bind('[data-fancybox]')
+const parallax = () => {
+	const arrSection = document.querySelectorAll('.section-parallax')
+	const move = (item, scroll) => {
+		let speed = item.dataset.speed || 1
+		let movementSize = scroll / 20 * speed
+		if (item.classList.contains('bottom')) {
+			item.style.marginTop = `${movementSize}px`;
+		}
+		if (item.classList.contains('right')) {
+			item.style.marginLeft = `${movementSize}px`;
+		}
+		if (item.classList.contains('top')) {
+			item.style.marginTop = `-${movementSize}px`;
+		}
+		if (item.classList.contains('left')) {
+			item.style.marginLeft = `-${movementSize}px`;
+		}
+	}
+	window.addEventListener('scroll', () => {
+		arrSection.forEach($section => {
+			const arrEls = $section.querySelectorAll('.parallax')
+			let top = (window.pageYOffset || $section.scrollTop) + $section.offsetHeight - ($section.offsetTop || 0)
+			console.log(top)
+			// eslint-disable-next-line no-unused-vars
+			for (const item of arrEls) {
+				move(item, top)
+			}
+		})
+	})
+}
+parallax()
