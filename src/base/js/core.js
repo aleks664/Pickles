@@ -128,7 +128,6 @@ const parallax = () => {
 		arrSection.forEach($section => {
 			const arrEls = $section.querySelectorAll('.parallax')
 			let top = (window.pageYOffset || $section.scrollTop) + $section.offsetHeight - ($section.offsetTop || 0)
-			console.log(top)
 			// eslint-disable-next-line no-unused-vars
 			for (const item of arrEls) {
 				move(item, top)

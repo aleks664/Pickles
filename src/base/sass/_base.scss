@@ -166,12 +166,26 @@ html.with-fancybox body  {
 }
 .section-parallax {
 	position: relative;
+	@include media-breakpoint-down(sm) {
+		height: 447px;
+	}
+	.inner {
+		@include media-breakpoint-down(sm) {
+			width: 768px;
+			height: 447px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+
+		}
+	}
 	.parallax {
 		position: absolute;
+
 		&.parallax-1 {
 			width: percentage(82/1920);
 			height: percentage(77/1119);
-			top: percentage(704/1119);
+			top: percentage(604/1119);
 			left: percentage(1313/1920);
 		}
 		&.parallax-2 {

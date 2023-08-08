@@ -167,7 +167,6 @@ var parallax = function parallax() {
     arrSection.forEach(function ($section) {
       var arrEls = $section.querySelectorAll('.parallax');
       var top = (window.pageYOffset || $section.scrollTop) + $section.offsetHeight - ($section.offsetTop || 0);
-      console.log(top);
       // eslint-disable-next-line no-unused-vars
       var _iterator = _createForOfIteratorHelper(arrEls),
         _step;

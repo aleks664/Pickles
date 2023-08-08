@@ -1732,12 +1732,22 @@ html.with-fancybox body {
 
 .section-parallax {
   position: relative; }
+  @media (max-width: 767px) {
+    .section-parallax {
+      height: 44.7rem; } }
+  @media (max-width: 767px) {
+    .section-parallax .inner {
+      width: 76.8rem;
+      height: 44.7rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); } }
   .section-parallax .parallax {
     position: absolute; }
     .section-parallax .parallax.parallax-1 {
       width: 4.27083%;
       height: 6.88114%;
-      top: 62.91332%;
+      top: 53.97676%;
       left: 68.38542%; }
     .section-parallax .parallax.parallax-2 {
       width: 1.97917%;
@@ -1804,7 +1814,7 @@ html.with-fancybox body {
     display: flex;
     align-items: center;
     justify-content: center; }
-    @media (max-width: 575px) {
+    @media (max-width: 374px) {
       .s-header .container {
         justify-content: flex-start; } }
   .s-header .logo {
