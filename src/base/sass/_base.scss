@@ -239,3 +239,16 @@ html.with-fancybox body  {
 		}
 	}
 }
+.section-main-banner {
+	overflow: hidden;
+	@include media-breakpoint-up(lg) {
+		height: 1208px;
+		position: relative;
+		.bg {
+			position: absolute;
+			width: 1920px;
+			@include center;
+		}
+	}
+
+}

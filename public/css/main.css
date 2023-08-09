@@ -1790,6 +1790,20 @@ html.with-fancybox body {
       top: 16.71135%;
       left: 1.5625%; }
 
+.section-main-banner {
+  overflow: hidden; }
+  @media (min-width: 992px) {
+    .section-main-banner {
+      height: 120.8rem;
+      position: relative; }
+      .section-main-banner .bg {
+        position: absolute;
+        width: 192rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
+
 /**
  * Components
  */
@@ -1834,7 +1848,7 @@ html.with-fancybox body {
       .s-header .logo {
         width: 20rem;
         height: 20rem;
-        margin: 0 4.9rem; } }
+        margin: 0 6.9rem; } }
     .s-header .logo img {
       display: block;
       max-width: 100%; }
