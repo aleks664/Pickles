@@ -1792,17 +1792,18 @@ html.with-fancybox body {
 
 .section-main-banner {
   overflow: hidden; }
-  @media (min-width: 992px) {
-    .section-main-banner {
-      height: 120.8rem;
-      position: relative; }
-      .section-main-banner .bg {
-        position: absolute;
-        width: 192rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
+
+@media (max-width: 1920px) and (min-width: 992px) {
+  .section-main-banner {
+    height: 120.8rem;
+    position: relative; }
+    .section-main-banner .bg {
+      position: absolute;
+      width: 192rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
 
 /**
  * Components
